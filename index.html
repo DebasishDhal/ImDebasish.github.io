@@ -32,11 +32,16 @@
             background-color: white;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        footer {
+        .footer {
             background-color: #35424a;
             color: white;
             text-align: center;
             padding: 10px;
+        }
+		.quote {
+            margin: 0 0 20px 40px;
+            padding: 0 0 0 20px;
+            border-left: 2px solid #ccc;
         }
     </style>
 </head>
@@ -63,7 +68,7 @@
     <div class="container" id="about">
         <h2>About Me</h2>
         <p> Greetings and welcome to my website. </p>
-	<p> I'm interested in Machine Learning, Data Analytics, Data Visualization and LLMs. </p>
+	<p> I'm interested in the general direction of Machine Learning, Data Analytics and Data Visualization. </p>
 	<p> I completed my Master's in Physics in 2023, from <a href="https://en.wikipedia.org/wiki/National_Institute_of_Science_Education_and_Research_Bhubaneswar">National Institute of Science Education and Research</a>, Odisha, India, a research institute under <a href="https://en.wikipedia.org/wiki/Department_of_Atomic_Energy">Department of Atomic Energy</a>. </p>
     </div>
 
@@ -127,31 +132,44 @@
 <div class="container" id="publication">
     <h2>Publication</h2>
     <ol>
-        <li>OdiaGenAI's participation at WAT2023 <a href="https://aclanthology.org/2023.wat-1.4/">(Paper)</a></li>
+        <li><b>OdiaGenAI's participation at WAT2023</b> <a href="https://aclanthology.org/2023.wat-1.4/">(Paper)</a></li>
 		<ul>
 			<li>Fine-tuning the NLLB-200 Large Language Model for Hindi, Bengali and Malayalam language.
 			<li>Published at the proceedings of Workshop of Asian Translation 2023 workshop.
 		</ul>
-		<blockquote>
+		<p></p>
+		<div class="quote">
 			This paper offers an in-depth overview of the team “ODIAGEN’s” translation system submitted to the Workshop on Asian
 			Translation (WAT2023). Our focus lies in the domain of Indic Multimodal tasks, specifically targeting English to Hindi,
 			English to Malayalam, and English to Bengali translations. The system uses a state-of-the-art Transformer-based
 			architecture, specifically the NLLB-200 model, fine-tuned with language-specific Visual Genome Datasets. With this
 			robust system, we were able to manage both text-to-text and multimodal translations, demonstrating versatility in
-			handling different translation modes.
-		</blockquote>
+			handling different translation modes. Our results showcase strong performance across the board, with particularly promising results in the Hindi and Bengali
+			translation tasks. A noteworthy achievement of our system lies in its stellar performance across all text-to-text
+			translation tasks. In the categories of English to Hindi, English to Bengali, and English to Malayalam translations, our
+			system claimed the top positions for both the evaluation and challenge sets. This system not only advances our
+			understanding of the challenges and nuances of Indic language translation but also opens avenues for future research to
+			enhance translation accuracy and performance.
+		</div>
+		
 	
 		<p></p>
-		<li>Building a Llama2-finetuned LLM for Odia Language Utilizing Domain Knowledge Instruction Set <a href="https://arxiv.org/abs/2312.12624">(arXiv)</a></li>
+		<li><b>Building a Llama2-finetuned LLM for Odia Language Utilizing Domain Knowledge Instruction Set</b> <a href="https://arxiv.org/abs/2312.12624">(arXiv)</a></li>
 		<ul>
 			<li>Fine-tuning Llama2-7b Large Language Model for Odia language, with the help of domain-specific instruction dataset.</li>
 		</ul>
-		<blockquote>
+		<p></p>
+		<div class="quote">
+			Building LLMs for languages other than English is in great demand due to the unavailability and performance of
+			multilingual LLMs, such as understanding the local context. The problem is critical for low-resource languages due to
+			the need for instruction sets. In a multilingual country like India, there is a need for LLMs supporting Indic languages
+			to provide generative AI and LLM-based technologies and services to its citizens.
+			<p>	</p>
 			This paper presents our approach of i) generating a large Odia instruction set, including domain knowledge data suitable
 			for LLM fine-tuning, and ii) building a Llama2-finetuned model tailored for enhanced performance in the Odia domain. The
 			proposed work will help researchers build an instruction set and LLM, particularly for Indic languages. We will release
 			the model and instruction set for the public for research and noncommercial purposes.
-		</blockquote>
+		</div>
 
     </ol>
 </div>
